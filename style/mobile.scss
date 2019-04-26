@@ -1,0 +1,70 @@
+@import 'variables';
+
+.heading {
+  .navbar {
+    display: block;
+    padding: 1rem;
+  
+    .navbar-logo {
+      display: block;
+    }
+  
+    .navbar-burger {
+      display: block;
+      position: absolute;
+      top: 2.7rem;
+      right: 3rem;
+      cursor: pointer;
+  
+      .burger-line {
+        width: 2.5rem;
+        height: .3rem;
+        background: $green;
+        margin: .4rem;
+        transition: color .2s;
+      }
+  
+      &:hover {
+        .burger-line {
+          background: $orange;
+        }
+      }
+    }
+  
+    .navbar-list {
+      display: none;
+  
+      li {
+        text-align: center;
+        width: 100%;
+  
+        .navbar-link {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  
+    .active {
+      display: block;
+    }
+  }
+
+  .hero {
+    flex-direction: column;
+    
+    .left {
+      text-align: center;
+      margin-top: 10rem;
+    }
+
+    .right {
+      justify-content: flex-start;
+      flex-direction: row;
+
+      a {
+        height: 4.3rem;
+      }
+    }
+  }
+}

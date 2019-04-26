@@ -1,0 +1,172 @@
+@import 'variables';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: $font-text;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.7rem;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+}
+
+.btn {
+  padding: 1rem;
+  border: 1px solid;
+  background: #FFFFFFE6;
+  border-radius: 3px;
+  text-decoration: none;
+
+
+  &:hover,&:focus {
+    background: #FFF;
+  } 
+}
+
+.btn-green {
+  color: $green;
+}
+
+.btn-orange {
+  color: $orange;
+}
+
+.heading {
+  height: 100vh;
+  background: url('../img/riego72.jpg') no-repeat center center/cover;
+  
+  .infobar {
+    height: 3rem;
+    background: #F7F9FB;
+    
+    
+    #infobar-center {
+      max-width: 900px;
+    }
+
+    .infobar-content {
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    &-item {
+      i{
+        color: rgb(218, 149, 64);
+      }
+      span {
+        color: $orange;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #FFFFFF;
+    padding: .5rem;
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    .navbar-logo {
+      width: 20rem;
+      display: flex;
+      align-items: center;
+  
+      a {
+        display: block;
+        height: 5.636rem;;
+      }
+  
+      img {
+        width: 100%;
+      }
+    }
+  
+    .navbar-list {
+      display: flex;
+      justify-content: space-around;
+      flex-basis: 20%;
+  
+      list-style: none;
+  
+      li {
+        padding: 0;
+      }
+  
+      .navbar-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1rem;
+        letter-spacing: .1rem;
+        font-weight: 600;
+        color: $green;
+        transition: color .2s;
+  
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  
+    .navbar-burger {
+      display: none;
+    }
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+    
+    .left, .right {
+      flex-basis: 50%;
+      padding: 0 2rem;
+    }
+
+    .left {
+      text-align: right;
+    }
+
+    .right {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 50vw;
+      text-align: center;
+      
+      a {
+        width: 10rem;
+        margin: 1rem 2rem;
+      }
+    }
+
+    .title {
+      color: #FFF;
+      text-shadow: 2px 2px 4px #000000;
+      font-weight: 700;
+      font-size: 4.8rem;
+      text-transform: uppercase;
+    }
+  }
+}
