@@ -30,6 +30,7 @@
 
 .heading .navbar .navbar-list {
   display: none;
+  position: absolute;
 }
 
 .heading .navbar .navbar-list li {
@@ -44,6 +45,9 @@
 
 .heading .navbar .active {
   display: block;
+  background: white;
+  width: 100%;
+  margin-left: -1rem;
 }
 
 .heading .hero {
@@ -55,7 +59,7 @@
 
 .heading .hero .left {
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 10vh;
 }
 
 .heading .hero .right {
@@ -70,5 +74,9 @@
 
 .heading .hero .right a {
   height: 4.3rem;
+}
+
+.heading .hero .title {
+  font-size: 3rem;
 }
 /*# sourceMappingURL=mobile.css.map */
