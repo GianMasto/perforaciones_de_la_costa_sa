@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAEI,KAFC,CACH,UAAU,CACR,MAAM,CAAC;EACL,SAAS,EAAE,IAAI;CAChB;;AAJL,AAKI,KALC,CACH,UAAU,CAIR,SAAS,CAAC;EACR,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,CAAC;CAClB",
+    "sources": [
+        "small-mobile.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "small-mobile.css"
+}

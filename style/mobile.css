@@ -1,13 +1,13 @@
-.heading .navbar {
+.navbar {
   display: block;
   padding: 1rem;
 }
 
-.heading .navbar .navbar-logo {
+.navbar .navbar-logo {
   display: block;
 }
 
-.heading .navbar .navbar-burger {
+.navbar .navbar-burger {
   display: block;
   position: absolute;
   top: 2.7rem;
@@ -15,68 +15,76 @@
   cursor: pointer;
 }
 
-.heading .navbar .navbar-burger .burger-line {
+.navbar .navbar-burger .burger-line {
   width: 2.5rem;
   height: .3rem;
   background: #03A678;
   margin: .4rem;
-  -webkit-transition: color .2s;
-  transition: color .2s;
+  -webkit-transition: background .2s;
+  transition: background .2s;
 }
 
-.heading .navbar .navbar-burger:hover .burger-line {
+.navbar .navbar-burger:hover .burger-line {
   background: #E08A1E;
 }
 
-.heading .navbar .navbar-list {
+.navbar .navbar-list {
   display: none;
   position: absolute;
 }
 
-.heading .navbar .navbar-list li {
+.navbar .navbar-list li {
   text-align: center;
   width: 100%;
 }
 
-.heading .navbar .navbar-list li .navbar-link {
+.navbar .navbar-list li .navbar-link {
   display: block;
   width: 100%;
 }
 
-.heading .navbar .active {
+.navbar .active {
   display: block;
   background: white;
   width: 100%;
   margin-left: -1rem;
 }
 
-.heading .hero {
+.hero {
+  height: 90vh;
+}
+
+.hero .title {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero .subtitle {
+  font-size: 2.5rem;
+}
+
+#nosotros {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.heading .hero .left {
+#nosotros .text {
+  margin-right: 0;
+  padding-right: 1rem;
+}
+
+#nosotros .text h3 {
   text-align: center;
-  margin-top: 10vh;
 }
 
-.heading .hero .right {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.heading .hero .right a {
-  height: 4.3rem;
-}
-
-.heading .hero .title {
-  font-size: 3rem;
+#nosotros .photo {
+  background-position-x: left;
+  margin: 0;
+  margin-top: 2rem;
+  padding: 0;
+  height: 300px;
+  border-radius: 0;
 }
 /*# sourceMappingURL=mobile.css.map */

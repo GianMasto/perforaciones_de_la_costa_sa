@@ -1,0 +1,14 @@
+@import 'variables';
+
+.hero {
+  .hero-text {
+    .title {
+      font-size: 3rem;
+    }
+    .subtitle {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+  }
+}

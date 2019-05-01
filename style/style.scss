@@ -14,7 +14,6 @@ html {
 
 body {
   font-size: 1.7rem;
-  overflow-x: hidden;
 }
 
 .container {
@@ -23,6 +22,15 @@ body {
   text-align: center;
   height: 100%;
 }
+
+.lead {
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $orange;
+}
+
 
 .btn {
   padding: 1rem;
@@ -45,128 +53,142 @@ body {
   color: $orange;
 }
 
-.heading {
-  height: 100vh;
-  background: url('../img/riego72.jpg') no-repeat center center/cover;
+.infobar {
+  height: 3rem;
+  background: #F7F9FB;
   
-  .infobar {
-    height: 3rem;
-    background: #F7F9FB;
-    
-    
-    #infobar-center {
-      max-width: 900px;
-    }
-
-    .infobar-content {
-      height: 100%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-    
-    &-item {
-      i{
-        color: rgb(218, 149, 64);
-      }
-      span {
-        color: $orange;
-        font-size: 1.5rem;
-      }
-    }
+  
+  #infobar-center {
+    max-width: 900px;
   }
 
-  .navbar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background: #FFFFFF;
-    padding: .5rem;
-  
+  .infobar-content {
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-  
-    .navbar-logo {
-      width: 20rem;
-      display: flex;
-      align-items: center;
-  
-      a {
-        display: block;
-        height: 5.636rem;;
-      }
-  
-      img {
-        width: 100%;
-      }
-    }
-  
-    .navbar-list {
-      display: flex;
-      justify-content: space-around;
-      flex-basis: 20%;
-  
-      list-style: none;
-  
-      li {
-        padding: 0;
-      }
-  
-      .navbar-link {
-        text-decoration: none;
-        text-transform: uppercase;
-        padding: 1rem;
-        letter-spacing: .1rem;
-        font-weight: 600;
-        color: $green;
-        transition: color .2s;
-  
-        &:hover {
-          color: $orange;
-        }
-      }
-    }
-  
-    .navbar-burger {
-      display: none;
-    }
   }
   
-  .hero {
+  &-item {
+    i{
+      color: rgb(218, 149, 64);
+    }
+    span {
+      color: $orange;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #FFFFFF;
+  padding: .5rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .navbar-logo {
+    width: 20rem;
     display: flex;
-    justify-content: center;
-    height: 90vh;
     align-items: center;
-    
-    .left, .right {
-      flex-basis: 50%;
-      padding: 0 2rem;
+
+    a {
+      display: block;
+      height: 5.636rem;;
     }
 
-    .left {
-      text-align: right;
+    img {
+      width: 100%;
+    }
+  }
+
+  .navbar-list {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 20%;
+
+    list-style: none;
+
+    li {
+      padding: 0;
     }
 
-    .right {
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      flex-basis: 50vw;
-      text-align: center;
-      
-      a {
-        width: 10rem;
-        margin: 1rem 2rem;
+    .navbar-link {
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 1rem;
+      letter-spacing: .1rem;
+      font-weight: 600;
+      color: $green;
+      transition: color .2s;
+
+      &:hover {
+        color: $orange;
       }
     }
+  }
 
+  .navbar-burger {
+    display: none;
+  }
+}
+
+.hero {
+  background: url('../img/riego721.jpg') no-repeat bottom center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
+  align-items: center;
+
+  .hero-text {
+    background: #00000099;
+    padding: 1.5rem;
+    width: 100%;
+    text-transform: uppercase;
     .title {
+      text-align: center;
       color: #FFF;
-      text-shadow: 2px 2px 4px #000000;
       font-weight: 700;
-      font-size: 4.8rem;
-      text-transform: uppercase;
+      font-size: 5rem;
     }
+  
+    .subtitle {
+      padding: 1rem;
+      width: 100%;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: $green;
+    }
+  }
+
+}
+
+#nosotros {
+  margin: 4rem 0;
+  display: flex;
+
+  div {
+    flex: 1;
+  }
+
+  .text {
+    text-align: justify;
+    margin-right:2rem;
+    padding-left: 1rem;
+    line-height: 3rem;
+
+  }
+
+  .photo {
+    background: url('../img/foto1.jpg') no-repeat center center/cover;
+    margin-left: 2rem;
+    padding-right: 1rem;
+    border-radius: 5px;
   }
 }

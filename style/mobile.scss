@@ -1,78 +1,88 @@
 @import 'variables';
 
-.heading {
-  .navbar {
+.navbar {
+  display: block;
+  padding: 1rem;
+
+  .navbar-logo {
     display: block;
-    padding: 1rem;
-  
-    .navbar-logo {
-      display: block;
+  }
+
+  .navbar-burger {
+    display: block;
+    position: absolute;
+    top: 2.7rem;
+    right: 3rem;
+    cursor: pointer;
+
+    .burger-line {
+      width: 2.5rem;
+      height: .3rem;
+      background: $green;
+      margin: .4rem;
+      transition: background .2s;
     }
-  
-    .navbar-burger {
-      display: block;
-      position: absolute;
-      top: 2.7rem;
-      right: 3rem;
-      cursor: pointer;
-  
+
+    &:hover {
       .burger-line {
-        width: 2.5rem;
-        height: .3rem;
-        background: $green;
-        margin: .4rem;
-        transition: color .2s;
+        background: $orange;
       }
-  
-      &:hover {
-        .burger-line {
-          background: $orange;
-        }
-      }
-    }
-  
-    .navbar-list {
-      display: none;
-      position: absolute;
-  
-      li {
-        text-align: center;
-        width: 100%;
-  
-        .navbar-link {
-          display: block;
-          width: 100%;
-        }
-      }
-    }
-  
-    .active {
-      display: block;
-      background: white;
-      width: 100%;
-      margin-left: -1rem;
     }
   }
 
-  .hero {
-    flex-direction: column;
-    
-    .left {
+  .navbar-list {
+    display: none;
+    position: absolute;
+
+    li {
       text-align: center;
-      margin-top: 10vh;
-    }
+      width: 100%;
 
-    .right {
-      justify-content: flex-start;
-      flex-direction: row;
-
-      a {
-        height: 4.3rem;
+      .navbar-link {
+        display: block;
+        width: 100%;
       }
     }
+  }
 
-    .title {
-      font-size: 3rem;
+  .active {
+    display: block;
+    background: white;
+    width: 100%;
+    margin-left: -1rem;
+  }
+}
+
+.hero {
+  height: 90vh;
+  .title {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
+  .subtitle {
+    font-size: 2.5rem;
+  }
+}
+
+#nosotros {
+  flex-direction: column;
+
+  .text {
+    margin-right: 0; 
+    padding-right: 1rem;
+
+    h3 {
+      text-align: center;
     }
   }
+
+  .photo {
+    background-position-x: left;
+    margin: 0;
+    margin-top: 2rem;
+    padding: 0;
+    height: 300px;
+    border-radius: 0;
+  }
+
 }

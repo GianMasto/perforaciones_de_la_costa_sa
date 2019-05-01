@@ -13,7 +13,6 @@ html {
 
 body {
   font-size: 1.7rem;
-  overflow-x: hidden;
 }
 
 .container {
@@ -21,6 +20,14 @@ body {
   margin: auto;
   text-align: center;
   height: 100%;
+}
+
+.lead {
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #E08A1E;
 }
 
 .btn {
@@ -43,21 +50,16 @@ body {
   color: #E08A1E;
 }
 
-.heading {
-  height: 100vh;
-  background: url("../img/riego72.jpg") no-repeat center center/cover;
-}
-
-.heading .infobar {
+.infobar {
   height: 3rem;
   background: #F7F9FB;
 }
 
-.heading .infobar #infobar-center {
+.infobar #infobar-center {
   max-width: 900px;
 }
 
-.heading .infobar .infobar-content {
+.infobar .infobar-content {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,16 +71,16 @@ body {
           align-items: center;
 }
 
-.heading .infobar-item i {
+.infobar-item i {
   color: #da9540;
 }
 
-.heading .infobar-item span {
+.infobar-item span {
   color: #E08A1E;
   font-size: 1.5rem;
 }
 
-.heading .navbar {
+.navbar {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -95,7 +97,7 @@ body {
           align-items: center;
 }
 
-.heading .navbar .navbar-logo {
+.navbar .navbar-logo {
   width: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,16 +107,16 @@ body {
           align-items: center;
 }
 
-.heading .navbar .navbar-logo a {
+.navbar .navbar-logo a {
   display: block;
   height: 5.636rem;
 }
 
-.heading .navbar .navbar-logo img {
+.navbar .navbar-logo img {
   width: 100%;
 }
 
-.heading .navbar .navbar-list {
+.navbar .navbar-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,11 +127,11 @@ body {
   list-style: none;
 }
 
-.heading .navbar .navbar-list li {
+.navbar .navbar-list li {
   padding: 0;
 }
 
-.heading .navbar .navbar-list .navbar-link {
+.navbar .navbar-list .navbar-link {
   text-decoration: none;
   text-transform: uppercase;
   padding: 1rem;
@@ -140,39 +142,16 @@ body {
   transition: color .2s;
 }
 
-.heading .navbar .navbar-list .navbar-link:hover {
+.navbar .navbar-list .navbar-link:hover {
   color: #E08A1E;
 }
 
-.heading .navbar .navbar-burger {
+.navbar .navbar-burger {
   display: none;
 }
 
-.heading .hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 90vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.heading .hero .left, .heading .hero .right {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  padding: 0 2rem;
-}
-
-.heading .hero .left {
-  text-align: right;
-}
-
-.heading .hero .right {
-  text-align: left;
+.hero {
+  background: url("../img/riego721.jpg") no-repeat bottom center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,21 +159,62 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 50vw;
-      flex-basis: 50vw;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.heading .hero .right a {
-  width: 10rem;
-  margin: 1rem 2rem;
-}
-
-.heading .hero .title {
-  color: #FFF;
-  text-shadow: 2px 2px 4px #000000;
-  font-weight: 700;
-  font-size: 4.8rem;
+.hero .hero-text {
+  background: #00000099;
+  padding: 1.5rem;
+  width: 100%;
   text-transform: uppercase;
+}
+
+.hero .hero-text .title {
+  text-align: center;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.hero .hero-text .subtitle {
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #03A678;
+}
+
+#nosotros {
+  margin: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#nosotros div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#nosotros .text {
+  text-align: justify;
+  margin-right: 2rem;
+  padding-left: 1rem;
+  line-height: 3rem;
+}
+
+#nosotros .photo {
+  background: url("../img/foto1.jpg") no-repeat center center/cover;
+  margin-left: 2rem;
+  padding-right: 1rem;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */
