@@ -88,5 +88,12 @@
     height: 300px;
     border-radius: 0;
   }
+}
 
+#servicios {
+  flex-direction: column;
+
+  .photo {
+    height: 300px;
+  }
 }

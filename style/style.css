@@ -251,4 +251,38 @@ body {
 #clientes .logos .logo img {
   height: 100%;
 }
+
+#servicios {
+  margin: 4rem 1rem;
+  min-height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#servicios div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#servicios .photo {
+  background: url("../img/foto2.jpg") no-repeat center center/cover;
+  margin-right: 2rem;
+  border-radius: 5px;
+}
+
+#servicios .text {
+  text-align: center;
+  margin-left: 2rem;
+  line-height: 3rem;
+}
+
+#servicios .text ul {
+  list-style: none;
+}
+
+#servicios .text ul i {
+  color: #03A678;
+}
 /*# sourceMappingURL=style.css.map */

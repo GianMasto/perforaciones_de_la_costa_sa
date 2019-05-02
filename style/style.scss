@@ -220,3 +220,33 @@ body {
     }
   }
 }
+
+#servicios {
+  margin: 4rem 1rem;
+  min-height: 25rem;
+  display: flex;
+
+  div {
+    flex: 1;
+  }
+  
+  .photo {
+    background: url('../img/foto2.jpg') no-repeat center center/cover;
+    margin-right: 2rem;
+    border-radius: 5px;
+  }
+
+  .text {
+    text-align: center;
+    margin-left:2rem;
+    line-height: 3rem;
+    
+    ul {
+      list-style: none;
+
+      i {
+        color: $green;
+      }
+    }
+  }
+}
