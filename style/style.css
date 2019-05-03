@@ -59,24 +59,6 @@ body {
   color: #E08A1E;
 }
 
-@-webkit-keyframes showImg {
-  from {
-    opacity: .5;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes showImg {
-  from {
-    opacity: .5;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .infobar {
   height: 3rem;
   background: #F7F9FB;
@@ -331,7 +313,5 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  -webkit-animation: showImg 700ms ease-in-out both;
-          animation: showImg 700ms ease-in-out both;
 }
 /*# sourceMappingURL=style.css.map */
