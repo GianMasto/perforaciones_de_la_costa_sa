@@ -86,14 +86,25 @@
     margin-top: 2rem;
     padding: 0;
     height: 300px;
-    border-radius: 0;
   }
 }
 
 #servicios {
-  flex-direction: column;
+  flex-direction: column-reverse;
 
   .photo {
     height: 300px;
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+#galeria {
+  .wrap {
+    flex-wrap: wrap;
+    #slider {
+      padding: 0 1rem;
+      order: -1;
+    }
   }
 }
