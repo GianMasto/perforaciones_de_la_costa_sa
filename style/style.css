@@ -37,6 +37,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #E08A1E;
+  padding-top: 4rem;
 }
 
 .btn {
@@ -284,6 +285,10 @@ body {
 
 #servicios .text ul i {
   color: #03A678;
+}
+
+#galeria {
+  margin-bottom: 3rem;
 }
 
 #galeria .wrap {

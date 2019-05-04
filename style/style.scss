@@ -38,6 +38,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: $orange;
+  padding-top: 4rem;
 }
 
 
@@ -252,6 +253,7 @@ body {
 }
 
 #galeria {
+  margin-bottom: 3rem;
   .wrap {
     display: flex;
     justify-content: center;
