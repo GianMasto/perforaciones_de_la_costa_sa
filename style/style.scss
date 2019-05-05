@@ -276,5 +276,14 @@ body {
       }
     }
   }
+}
 
+#contacto {
+  section {
+    display: flex;
+
+    div {
+      flex: 1;
+    }
+  }
 }
