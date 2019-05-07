@@ -126,4 +126,19 @@
 iframe {
   width: 100%;
 }
+
+footer .top {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .top .about {
+  display: none;
+}
+
+footer .top div h4 {
+  padding-bottom: 0;
+}
 /*# sourceMappingURL=mobile.css.map */

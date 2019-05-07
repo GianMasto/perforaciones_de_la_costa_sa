@@ -118,3 +118,20 @@
 iframe {
   width: 100%;
 }
+
+footer {
+  .top {
+    flex-direction: column;
+
+    .about {
+      display: none;
+    }
+
+    div {
+      h4 {
+        padding-bottom: 0;
+      }
+    }
+    
+  }
+}

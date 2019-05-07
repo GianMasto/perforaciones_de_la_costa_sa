@@ -366,8 +366,9 @@ iframe {
 }
 
 #contacto section .right .info {
+  color: #111;
+  border-radius: 5px;
   text-align: center;
-  margin-left: 2rem;
   line-height: 3rem;
 }
 
@@ -389,7 +390,7 @@ iframe {
 
 footer {
   padding: 5rem 2rem 0 2rem;
-  background: #e3e3e3;
+  background: #FFF;
   height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -408,15 +409,11 @@ footer .top {
   padding-bottom: 5rem;
 }
 
-footer .top #center {
-  text-align: center;
-}
-
 footer .top div {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  text-align: left;
+  text-align: center;
 }
 
 footer .top div:first-child {
@@ -424,7 +421,7 @@ footer .top div:first-child {
 }
 
 footer .top div h4 {
-  color: #E08A1E;
+  color: #03A678;
   font-weight: 600;
   margin-bottom: 2rem;
   letter-spacing: 1px;
@@ -437,5 +434,27 @@ footer .top div p {
 
 footer .top div a {
   display: inline-block;
+  color: #333;
+  text-decoration: none;
+}
+
+footer .top div ul {
+  list-style: none;
+  color: #737373;
+}
+
+footer hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+footer .bottom {
+  font-size: 1.5rem;
+}
+
+footer .bottom a {
+  color: rgba(3, 166, 120, 0.7);
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
