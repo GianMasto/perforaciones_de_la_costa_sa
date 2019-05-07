@@ -339,3 +339,44 @@ iframe {
     }
   }
 }
+
+footer {
+  padding: 5rem 2rem 0 2rem;
+  background: #e3e3e3;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .top {
+    display: flex;
+    padding-bottom: 5rem;
+
+    #center {
+      text-align: center;
+    }
+
+    div {
+      flex: 1;
+      text-align: left ;
+      &:first-child {
+        margin-right: 3rem;
+      }
+
+      h4 {
+        color: $orange;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        letter-spacing: 1px;
+      }
+      p {
+        color: #737373;
+        text-align: justify;
+      }
+
+      a {
+        display: inline-block;
+      }
+    }
+  }
+}

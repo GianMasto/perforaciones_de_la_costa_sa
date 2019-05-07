@@ -386,4 +386,56 @@ iframe {
 #contacto section .right .map {
   text-align: center;
 }
+
+footer {
+  padding: 5rem 2rem 0 2rem;
+  background: #e3e3e3;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 5rem;
+}
+
+footer .top #center {
+  text-align: center;
+}
+
+footer .top div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: left;
+}
+
+footer .top div:first-child {
+  margin-right: 3rem;
+}
+
+footer .top div h4 {
+  color: #E08A1E;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+footer .top div p {
+  color: #737373;
+  text-align: justify;
+}
+
+footer .top div a {
+  display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */
