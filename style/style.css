@@ -380,7 +380,7 @@ iframe {
   color: #555;
 }
 
-#contacto section .right .info ul a:link {
+#contacto section .right .info ul a:link, #contacto section .right .info ul a:visited {
   color: #000;
 }
 
