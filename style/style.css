@@ -16,6 +16,10 @@ body {
   width: 100%;
 }
 
+iframe {
+  width: 100%;
+}
+
 #hidden-overflow {
   overflow: hidden;
 }
@@ -36,27 +40,6 @@ body {
   font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #E08A1E;
-  padding-top: 4rem;
-}
-
-.btn {
-  padding: 1rem;
-  border: 1px solid;
-  background: #FFFFFFE6;
-  border-radius: 3px;
-  text-decoration: none;
-}
-
-.btn:hover, .btn:focus {
-  background: #FFF;
-}
-
-.btn-green {
-  color: #03A678;
-}
-
-.btn-orange {
   color: #E08A1E;
 }
 
@@ -288,7 +271,7 @@ body {
 }
 
 #galeria {
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
 #galeria .wrap {
@@ -320,15 +303,87 @@ body {
   border-radius: 10px;
 }
 
+#contacto .text {
+  padding-top: 4rem;
+}
+
 #contacto section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 3rem;
 }
 
 #contacto section div {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding: 2rem;
+}
+
+#contacto section .left form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+#contacto section .left form input, #contacto section .left form textarea {
+  margin: 1rem 0;
+  border: 1px solid #03A678;
+  border-radius: 3px;
+  padding: 1rem .8rem;
+  max-width: 100%;
+}
+
+#contacto section .left form input:focus, #contacto section .left form textarea:focus {
+  outline-style: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #ccb497;
+}
+
+#contacto section .left form textarea {
+  resize: none;
+  height: 230px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+#contacto section .left form input[type="submit"] {
+  cursor: pointer;
+  background: #03A678;
+  border: none;
+  color: #FFF;
+}
+
+#contacto section .left form input[type="submit"]:hover {
+  background: #038f67;
+}
+
+#contacto section .right .info {
+  text-align: center;
+  margin-left: 2rem;
+  line-height: 3rem;
+}
+
+#contacto section .right .info ul {
+  list-style: none;
+}
+
+#contacto section .right .info ul i {
+  color: #555;
+}
+
+#contacto section .right .info ul a:link {
+  color: #000;
+}
+
+#contacto section .right .map {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

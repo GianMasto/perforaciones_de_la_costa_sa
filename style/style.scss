@@ -17,6 +17,10 @@ body {
   width: 100%;
 }
 
+iframe {
+  width: 100%;
+}
+
 #hidden-overflow {
   overflow: hidden;
 }
@@ -37,29 +41,6 @@ body {
   font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: $orange;
-  padding-top: 4rem;
-}
-
-
-.btn {
-  padding: 1rem;
-  border: 1px solid;
-  background: #FFFFFFE6;
-  border-radius: 3px;
-  text-decoration: none;
-
-
-  &:hover,&:focus {
-    background: #FFF;
-  } 
-}
-
-.btn-green {
-  color: $green;
-}
-
-.btn-orange {
   color: $orange;
 }
 
@@ -241,7 +222,7 @@ body {
     text-align: center;
     margin-left:2rem;
     line-height: 3rem;
-    
+
     ul {
       list-style: none;
 
@@ -253,7 +234,7 @@ body {
 }
 
 #galeria {
-  margin-bottom: 3rem;
+  margin: 3rem 0;
   .wrap {
     display: flex;
     justify-content: center;
@@ -279,11 +260,82 @@ body {
 }
 
 #contacto {
+
+  .text {
+    padding-top: 4rem;
+  }
+
   section {
     display: flex;
+    padding-bottom: 3rem;
 
     div {
       flex: 1;
+      padding: 2rem;
+    }
+
+    .left {
+      form {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        input, textarea {
+          margin: 1rem 0;
+          border: 1px solid $green;
+          border-radius: 3px;
+          padding: 1rem .8rem;
+          max-width: 100%;
+
+          &:focus {
+            outline-style:none;
+            box-shadow:none;
+            border: 1px solid rgb(204, 180, 151);
+          }
+        }
+
+        textarea {
+          resize: none;
+          height: 230px;
+          font-family: inherit;
+          font-size: inherit;
+        }
+
+        input[type="submit"] {
+          cursor: pointer;
+          background: $green;
+          border: none;
+          color: #FFF;
+
+          &:hover {
+            background: rgb(3, 143, 103);
+          }
+        }
+      }
+    }
+
+    .right {
+      .info {
+      text-align: center;
+      margin-left:2rem;
+      line-height: 3rem;
+      
+        ul {
+          list-style: none;
+
+          i {
+            color: #555;
+          }
+
+          a:link {
+            color: #000;
+          }
+        }
+      }
+
+      .map {
+        text-align: center;
+      }
     }
   }
 }
